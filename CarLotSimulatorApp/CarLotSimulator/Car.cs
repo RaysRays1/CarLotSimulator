@@ -8,42 +8,13 @@ public class Car
     private string enginenoise;
     private string honknoise;
     private bool isdriveable;
-    public int Year
-    {
-        get { return year; }
-        set { year = value; }
-    }
 
-    public string Make
-    {
-        get {return make;}
-        set {make = value;}
-    }
-
-    public string Model
-    {
-        get { return model; }
-        set { model = value; }
-}
-
-    public string EngineNoise
-    {
-        get { return enginenoise; }
-        set { enginenoise = value; }
-    }
-
-    public string HonkNoise
-    {
-        get { return honknoise; }
-        set { honknoise = value; }
-    }
-
-    public bool IsDriveable
-    {
-        get { return isdriveable; }
-        set { isdriveable = value; }
-    }
-
+    public int Year { get; set; }
+    public string Make { get; set; }
+    public string Model { get; set; }
+    public string EngineNoise { get; set; }
+    public string HonkNoise { get; set; }
+    public bool IsDriveable { get; set; }
     public void MakeEngineNoise(string noise)
     {
         enginenoise = noise;

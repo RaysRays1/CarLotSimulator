@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 namespace CarLotSimulator
 {
@@ -21,59 +23,59 @@ namespace CarLotSimulator
             {
 
 
-                var chevy = new Car();
+                var CarOne = new Car();
                 
-                chevy.Model = "Chevy";
-                chevy.Make = "Trailblazer SS";
-                chevy.Year = 2023;
-                chevy.HonkNoise = "IceCream truck";
-                chevy.EngineNoise = "Like a 5.0 Mustang";
-                chevy.IsDriveable = true;
-                chevy.MakeEngineNoise("like a 5.0 mustang");
-                chevy.MakeHonkNoise("like a icecream truck");
+                CarOne.Model = "Chevy";
+                CarOne.Make = "Trailblazer SS";
+                CarOne.Year = 2023;
+                CarOne.HonkNoise = "IceCream truck";
+                CarOne.EngineNoise = "Like a 5.0 Mustang";
+                CarOne.IsDriveable = true;
+                CarOne.MakeEngineNoise("like a 5.0 mustang");
+                CarOne.MakeHonkNoise("like a icecream truck");
                 
-                Console.WriteLine($"This is my {chevy.Model} {chevy.Make} {chevy.Year}.");
-                Console.WriteLine($"My horn sounds like a {chevy.HonkNoise} the engine sounds {chevy.EngineNoise}.");
-                Console.WriteLine($"{chevy.IsDriveable} this is the fastest truck iv'e had.");
+                Console.WriteLine($"This is my {CarOne.Model} {CarOne.Make} {CarOne.Year}.");
+                Console.WriteLine($"My horn sounds like a {CarOne.HonkNoise} the engine sounds {CarOne.EngineNoise}.");
+                Console.WriteLine($"{CarOne.IsDriveable} this is the fastest truck iv'e had.");
                 Console.WriteLine();
 
             }
 
             { 
-                var chevrolet = new Car();
+                var CarTwo = new Car();
+                    
+                CarTwo.Model = "Chevrolet";
+                CarTwo.Make = "Monte Carlo SS";
+                CarTwo.Year = 1970;
+                CarTwo.HonkNoise = "loud";
+                CarTwo.EngineNoise = "nice smooth growl";
+                CarTwo.IsDriveable = true;
+                CarTwo.MakeEngineNoise("nice smooth growl");
+                CarTwo.MakeHonkNoise("loud");
                 
-                chevrolet.Model = "Chevrolet";
-                chevrolet.Make = "Monte Carlo SS";
-                chevrolet.Year = 1970;
-                chevrolet.HonkNoise = "loud";
-                chevrolet.EngineNoise = "nice smooth growl";
-                chevrolet.IsDriveable = true;
-                chevrolet.MakeEngineNoise("nice smooth growl");
-                chevrolet.MakeHonkNoise("loud");
-                
-                Console.WriteLine($"This is my {chevrolet.Model} {chevrolet.Make} {chevrolet.Year}.");
-                Console.WriteLine($"the engine on this car is a {chevrolet.EngineNoise} with a {chevrolet.HonkNoise} horn.");
-                Console.WriteLine($"{chevrolet.IsDriveable} i really cant pick which car i like the most.");
+                Console.WriteLine($"This is my {CarTwo.Model} {CarTwo.Make} {CarTwo.Year}.");
+                Console.WriteLine($"the engine on this car is a {CarTwo.EngineNoise} with a {CarTwo.HonkNoise} horn.");
+                Console.WriteLine($"{CarTwo.IsDriveable} i really cant pick which car i like the most.");
                 Console.WriteLine();
             }
 
 
             {
                 
-                var dodge  = new Car();
+                var CarThree  = new Car();
               
-                dodge.Model = "Dodge";
-                dodge.Make = "Charger Scat pack";
-                dodge.Year = 2023;
-                dodge.HonkNoise = "Loud";
-                dodge.EngineNoise = "Like a Big Mean Cat growling";
-                dodge.IsDriveable = true;
-                dodge.MakeEngineNoise("like a big mean cat growling");
-                dodge.MakeHonkNoise("loud");
+                CarThree.Model = "Dodge";
+                CarThree.Make = "Charger Scat pack";
+                CarThree.Year = 2023;
+                CarThree.HonkNoise = "Loud";
+                CarThree.EngineNoise = "Like a Big Mean Cat growling";
+                CarThree.IsDriveable = true;
+                CarThree.MakeEngineNoise("like a big mean cat growling");
+                CarThree.MakeHonkNoise("loud");
                 
-                Console.WriteLine($"This is my {dodge.Make} {dodge.Model} {dodge.Year}.");
-                Console.WriteLine($"My horn is {dodge.HonkNoise} also the engine is {dodge.EngineNoise}.");
-                Console.WriteLine($"{dodge.IsDriveable} i loving driving this car.");
+                Console.WriteLine($"This is my {CarThree.Make} {CarThree.Model} {CarThree.Year}.");
+                Console.WriteLine($"My horn is {CarThree.HonkNoise} also the engine is {CarThree.EngineNoise}.");
+                Console.WriteLine($"{CarThree.IsDriveable} i loving driving this car.");
                 Console.WriteLine();
             }
 
@@ -87,8 +89,10 @@ namespace CarLotSimulator
 
             //Create a CarLot class
             //It should have at least one property: a List of cars
+
+            
             //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
-        }
+    }
     }
 }
